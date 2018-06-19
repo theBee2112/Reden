@@ -107,6 +107,8 @@ BITCOIN_CORE_H = \
   governance-votedb.h \
   flat-database.h \
   hash.h \
+  hashSelection.h \
+  trihash.h \
   httprpc.h \
   httpserver.h \
   init.h \
@@ -310,6 +312,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sph_sha2.c \
   crypto/sph_sha512.c \
   crypto/ctaes/ctaes.c \
+  crypto/haval.c \
   crypto/neoscrypt.h \
   crypto/ripemd160.h \
   crypto/sha1.cpp \
@@ -333,6 +336,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sph_shabal.h \
   crypto/sph_whirlpool.h \
   crypto/sph_sha2.h \
+  crypto/sph_haval.h \
   crypto/sph_types.h \
   crypto/ctaes/ctaes.h \
   crypto/sha512.cpp \
@@ -352,6 +356,8 @@ libbitcoin_common_a_SOURCES = \
   core_read.cpp \
   core_write.cpp \
   hash.cpp \
+  hashSelection.cpp \
+  trihash.cpp \
   key.cpp \
   keystore.cpp \
   netbase.cpp \
